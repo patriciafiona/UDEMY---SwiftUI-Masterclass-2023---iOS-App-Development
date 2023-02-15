@@ -36,6 +36,15 @@ struct SettingView: View {
                     //MARK: - SECTION 2
                     
                     //MARK: - SECTION 3
+                    GroupBox(
+                        label: SettingLabelView(labelText: "Application", labelImage: "app.iphone")) {
+                            SettingRowView(name: "Developer", content: "FIONA, patricia")
+                            SettingRowView(name: "Designer", content: "Robert Petras")
+                            SettingRowView(name: "Compatibility", content: "iOS 15.2")
+                            SettingRowView(name: "Website", linkLabel: "SwiftUI Masterclass", linkDestination: "swiftuimasterclass.com")
+                            SettingRowView(name: "Github", linkLabel: "Github Patricia Fiona", linkDestination: "github.com/patriciafiona")
+                            SettingRowView(name: "Version", content: "1.0.0")
+                    }
                     
                 }//: - Vstack
                 .navigationBarTitle(
