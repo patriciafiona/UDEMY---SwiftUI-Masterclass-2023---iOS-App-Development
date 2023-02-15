@@ -10,17 +10,30 @@ import SwiftUI
 struct ContentView: View {
     //MARK: - PROPERTIES
     var fruits: [Fruit] = fruitData
+    @State private var isShowingSetting: Bool = false
     
     //MARK: - BODY
     var body: some View {
         NavigationView {
             List {
                 ForEach(fruits.shuffled()) { item in
-                    FruitRowView(fruit: item)
-                        .padding(.vertical, 4)
+                    NavigationLink(destination: FruitDetailView(fruit: item)) {
+                        FruitRowView(fruit: item)
+                            .padding(.vertical, 4)
+                    }
                 }
             }
             .navigationTitle("Fruits")
+            .navigationBarItems(
+                trailing: Button(action: {
+                    isShowingSetting = true
+                }){
+                    Image(systemName: "slider.horizontal.3")
+                }
+                    .sheet(isPresented: $isShowingSetting) {
+                        SettingView()
+                    }
+            )
         }//: NAVIGATION
     }
 }
