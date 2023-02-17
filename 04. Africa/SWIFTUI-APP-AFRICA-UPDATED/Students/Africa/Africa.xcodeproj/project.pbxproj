@@ -13,6 +13,8 @@
 		638B4D17299F101A00DAFF2A /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B4D16299F101A00DAFF2A /* VideoListItemView.swift */; };
 		638B4D19299F16C700DAFF2A /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B4D18299F16C700DAFF2A /* VideoPlayerView.swift */; };
 		638B4D1C299F179D00DAFF2A /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B4D1B299F179D00DAFF2A /* VideoPlayerHelper.swift */; };
+		638B4D1E299F1DA200DAFF2A /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B4D1D299F1DA200DAFF2A /* LocationModel.swift */; };
+		638B4D20299F365D00DAFF2A /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638B4D1F299F365C00DAFF2A /* MapAnnotationView.swift */; };
 		63A0E0BC299E2C3D00BF1DFE /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0E0BB299E2C3D00BF1DFE /* HeadingView.swift */; };
 		63A0E0BE299E2DC200BF1DFE /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0E0BD299E2DC200BF1DFE /* InsetGalleryView.swift */; };
 		63A0E0C0299E316F00BF1DFE /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A0E0BF299E316F00BF1DFE /* InsetFactView.swift */; };
@@ -57,6 +59,8 @@
 		638B4D16299F101A00DAFF2A /* VideoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemView.swift; sourceTree = "<group>"; };
 		638B4D18299F16C700DAFF2A /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		638B4D1B299F179D00DAFF2A /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
+		638B4D1D299F1DA200DAFF2A /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		638B4D1F299F365C00DAFF2A /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		63A0E0BB299E2C3D00BF1DFE /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
 		63A0E0BD299E2DC200BF1DFE /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 		63A0E0BF299E316F00BF1DFE /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 				63D70805299E21DB004FEFCC /* CoverImageModel.swift */,
 				63D7080C299E2653004FEFCC /* AnimalModel.swift */,
 				638B4D13299F0FAC00DAFF2A /* VideoModel.swift */,
+				638B4D1D299F1DA200DAFF2A /* LocationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,6 +253,7 @@
 				638B4D11299F0D4000DAFF2A /* ExternalWebLinkView.swift */,
 				638B4D16299F101A00DAFF2A /* VideoListItemView.swift */,
 				638B4D18299F16C700DAFF2A /* VideoPlayerView.swift */,
+				638B4D1F299F365C00DAFF2A /* MapAnnotationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -385,9 +391,11 @@
 				638B4D1C299F179D00DAFF2A /* VideoPlayerHelper.swift in Sources */,
 				63E4263D299CDB64001ACE84 /* AfricaApp.swift in Sources */,
 				638B4D12299F0D4000DAFF2A /* ExternalWebLinkView.swift in Sources */,
+				638B4D20299F365D00DAFF2A /* MapAnnotationView.swift in Sources */,
 				63D707EE299E1D86004FEFCC /* VideoListView.swift in Sources */,
 				638B4D14299F0FAC00DAFF2A /* VideoModel.swift in Sources */,
 				63D707F2299E1DAD004FEFCC /* GalleryView.swift in Sources */,
+				638B4D1E299F1DA200DAFF2A /* LocationModel.swift in Sources */,
 				63A0E0BE299E2DC200BF1DFE /* InsetGalleryView.swift in Sources */,
 				638B4D17299F101A00DAFF2A /* VideoListItemView.swift in Sources */,
 				63D70809299E224E004FEFCC /* CodableBundleExtension.swift in Sources */,
