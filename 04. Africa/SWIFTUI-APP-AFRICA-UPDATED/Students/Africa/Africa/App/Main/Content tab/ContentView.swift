@@ -39,7 +39,6 @@ struct ContentView: View {
     //MARK: - BODY
     var body: some View {
         NavigationView {
-            
             Group {
                 if !isGridViewActive {
                     List {
@@ -52,6 +51,8 @@ struct ContentView: View {
                                 AnimalListItemView(animal: animal)
                             }//: Link
                         }//: ForEach
+                        CreditsView()
+                            .modifier(CenterModifier())
                     }//: List
                 } else {
                     ScrollView(.vertical, showsIndicators: false) {

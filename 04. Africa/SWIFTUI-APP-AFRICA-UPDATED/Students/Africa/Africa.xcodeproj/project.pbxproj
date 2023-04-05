@@ -52,8 +52,10 @@
 		63E42668299CE0BF001ACE84 /* covers.json in Resources */ = {isa = PBXBuildFile; fileRef = 63E42664299CE0BF001ACE84 /* covers.json */; };
 		C30FDCB329BB2885007EBBFA /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30FDCB229BB2885007EBBFA /* AnimalGridItemView.swift */; };
 		C30FDCC729BB3088007EBBFA /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30FDCC629BB3088007EBBFA /* Stickers.xcassets */; };
-		C30FDCCB29BB3088007EBBFA /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C30FDCC429BB3086007EBBFA /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C30FDCCB29BB3088007EBBFA /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C30FDCC429BB3086007EBBFA /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C321E43D29BB164600EFDA10 /* MotionAnimatipnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321E43C29BB164600EFDA10 /* MotionAnimatipnView.swift */; };
+		C39282C129DD077E00A4D221 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39282C029DD077E00A4D221 /* CreditsView.swift */; };
+		C39282C429DD0A2800A4D221 /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39282C329DD0A2800A4D221 /* CenterModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,9 @@
 		C30FDCC629BB3088007EBBFA /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		C30FDCC829BB3088007EBBFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C321E43C29BB164600EFDA10 /* MotionAnimatipnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimatipnView.swift; sourceTree = "<group>"; };
+		C39282C029DD077E00A4D221 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		C39282C329DD0A2800A4D221 /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
+		C39282C529DD0D9600A4D221 /* Africa.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Africa.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +259,8 @@
 		63E4263B299CDB64001ACE84 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				C39282C529DD0D9600A4D221 /* Africa.entitlements */,
+				C39282C229DD0A0A00A4D221 /* Modifier */,
 				638B4D1A299F178800DAFF2A /* Helper */,
 				63D70807299E223C004FEFCC /* Extension */,
 				63D70804299E2197004FEFCC /* Model */,
@@ -291,6 +298,7 @@
 				638B4D1F299F365C00DAFF2A /* MapAnnotationView.swift */,
 				C321E43C29BB164600EFDA10 /* MotionAnimatipnView.swift */,
 				C30FDCB229BB2885007EBBFA /* AnimalGridItemView.swift */,
+				C39282C029DD077E00A4D221 /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -334,6 +342,14 @@
 				C30FDCC829BB3088007EBBFA /* Info.plist */,
 			);
 			path = Stickers;
+			sourceTree = "<group>";
+		};
+		C39282C229DD0A0A00A4D221 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				C39282C329DD0A2800A4D221 /* CenterModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,8 +490,10 @@
 				C30FDCB329BB2885007EBBFA /* AnimalGridItemView.swift in Sources */,
 				638B4D1E299F1DA200DAFF2A /* LocationModel.swift in Sources */,
 				63A0E0BE299E2DC200BF1DFE /* InsetGalleryView.swift in Sources */,
+				C39282C129DD077E00A4D221 /* CreditsView.swift in Sources */,
 				638B4D17299F101A00DAFF2A /* VideoListItemView.swift in Sources */,
 				63D70809299E224E004FEFCC /* CodableBundleExtension.swift in Sources */,
+				C39282C429DD0A2800A4D221 /* CenterModifier.swift in Sources */,
 				63A0E0BC299E2C3D00BF1DFE /* HeadingView.swift in Sources */,
 				638B4D19299F16C700DAFF2A /* VideoPlayerView.swift in Sources */,
 			);
@@ -486,6 +504,7 @@
 /* Begin PBXTargetDependency section */
 		C30FDCCA29BB3088007EBBFA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = C30FDCC329BB3086007EBBFA /* Stickers */;
 			targetProxy = C30FDCC929BB3088007EBBFA /* PBXContainerItemProxy */;
 		};
@@ -613,9 +632,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
+				DEVELOPMENT_TEAM = 828D2J84L9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Africa/Info.plist;
@@ -631,6 +652,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.patriciafiona.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -642,9 +666,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Africa/Africa.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
+				DEVELOPMENT_TEAM = 828D2J84L9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Africa/Info.plist;
@@ -660,6 +686,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.patriciafiona.Africa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -681,6 +710,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.patriciafiona.Africa.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -701,6 +731,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.patriciafiona.Africa.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
