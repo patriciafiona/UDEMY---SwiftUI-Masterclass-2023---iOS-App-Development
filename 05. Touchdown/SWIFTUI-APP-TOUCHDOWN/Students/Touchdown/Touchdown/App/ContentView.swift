@@ -20,10 +20,16 @@ struct ContentView: View {
                     .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
                     .background(Color.white)
                     .shadow(color: Color.black.opacity(0.05), radius: 5, x: 5, y: 5)
-                Spacer()
-                
-                FooterView()
-                    .padding(.horizontal)
+                ScrollView(.vertical, showsIndicators: false) {
+                    FeaturedTabView()
+                      .frame(height: UIScreen.main.bounds.width / 1.475) // This will fix the layout rendering priority issue by using the screen's aspect ratio.
+                      .padding(.vertical, 20)
+                    
+                    VStack(spacing: 0){
+                        FooterView()
+                            .padding(.horizontal)
+                    }//: VSTACK
+                }//: SCROLLVIEW
             }//: VSTACK
             .background(colorBackground.ignoresSafeArea(.all, edges: .all))
         }//: ZSTACK
