@@ -75,6 +75,13 @@ Data source           : [UDEMY](https://www.udemy.com/course/swiftui-masterclass
 
 :heavy_check_mark: Learn how to integrate Core Data with CloudKit
 
+## Requirements
+- Xcode 14 from Apple (free)
+- macOS 13 Ventura from Apple (free)
+- Willing to create awesome apps by following the instructor step by step
+- You do not need any other prior programming experience or knowledge
+- Macintosh computer
+
 ## 💖 Support the Project
 Thank you so much already visiting my projects! If you want to support my open source work, please star this repository. 
 
