@@ -83,6 +83,6 @@ Data source           : [UDEMY](https://www.udemy.com/course/swiftui-masterclass
 - Macintosh computer
 
 ## 💖 Support the Project
-Thank you so much already visiting my projects! If you want to support my open source work, please star this repository. 
+Thank you so much already visiting my repository! If you want to support my open repository, please star this repository. 
 
 [![Platform](https://img.shields.io/badge/XCode-14.3%20beta%203-blue)](https://developer.apple.com/xcode/)
