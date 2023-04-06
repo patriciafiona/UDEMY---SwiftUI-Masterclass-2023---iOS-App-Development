@@ -1,7 +1,7 @@
 # UDEMY---SwiftUI-Masterclass-2023---iOS-App-Development
  This is the result of Swift Masterclass 2023 - iOS App Development course in UDEMY. You can access this class through this [link](https://www.udemy.com/course/swiftui-masterclass-course-ios-development-with-swift/).
 
-## Information
+## :information_source: Information
 <p align="center">
   <img src="https://user-images.githubusercontent.com/32255348/230029534-97879b49-c8ff-4fc7-ba6b-de1073dd8848.png" width="300"/>
 </p>
@@ -17,7 +17,7 @@ Programming Language  : [Swift](https://developer.apple.com/swift/)
 Data source           : [UDEMY](https://www.udemy.com/course/swiftui-masterclass-course-ios-development-with-swift/)
 ```
 
-## Table of Contents
+## :clipboard: Table of Contents
 | Section      | Project Name    | Details    | Poster  | Project Link |
 | :-: | :-: | :-: | :-: | :-: | 
 | Section 01 | Restart      | Sometimes we feel discouraged. Sometimes we are vastly disappointed too. If so, by practicing solitude we can feel better and focused. This is when we create amazing things. Please join me to develop this beautiful iOS application with SwiftUI. | <img src="https://user-images.githubusercontent.com/32255348/230036164-289163d3-f5f4-41b7-832a-41844c3cd3d0.jpg" width="1000"/> | [Link](https://github.com/patriciafiona/UDEMY---SwiftUI-Masterclass-2023---iOS-App-Development/tree/S01-Restart) |
@@ -34,7 +34,7 @@ Data source           : [UDEMY](https://www.udemy.com/course/swiftui-masterclass
 | Section 12 | Honeymoon    | How hard is it to create an iOS app with Tinder-like gestures? You will pick up some handy SwiftUI best-practices with this hands-on tutorial. | <img src="https://user-images.githubusercontent.com/32255348/230041820-8cb8e9ce-4e16-48c8-8a4b-aaf5a824b5aa.jpg" width="1000"/> | [COMMING SOON] |
 
 
-## What you'll learn
+## :dart: What you'll learn
 :heavy_check_mark: Develop iOS iPhone and iPad apps with gorgeous layout and design
 
 :heavy_check_mark: Learn Swift programming language - Essential iOS Development Skill
@@ -75,7 +75,13 @@ Data source           : [UDEMY](https://www.udemy.com/course/swiftui-masterclass
 
 :heavy_check_mark: Learn how to integrate Core Data with CloudKit
 
-## Requirements
+## Ratings & Total Hour
+|Rating | Hours |
+| :-: | :-: |
+|4.3 :star: | :alarm_clock: 31 hours |
+|4,823 ratings| Total |
+
+## :computer: Requirements
 - Xcode 14 from Apple (free)
 - macOS 13 Ventura from Apple (free)
 - Willing to create awesome apps by following the instructor step by step
@@ -86,3 +92,4 @@ Data source           : [UDEMY](https://www.udemy.com/course/swiftui-masterclass
 Thank you so much already visiting my repository! If you want to support my open repository, please star this repository. 
 
 [![Platform](https://img.shields.io/badge/XCode-14.3%20beta%203-blue)](https://developer.apple.com/xcode/)
+[![Platform](https://img.shields.io/badge/Last%20updated-April%202023-orange)](https://www.udemy.com/course/swiftui-masterclass-course-ios-development-with-swift/)
