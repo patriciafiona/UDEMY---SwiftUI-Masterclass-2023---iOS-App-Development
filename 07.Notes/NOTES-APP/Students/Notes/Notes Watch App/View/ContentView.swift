@@ -9,14 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
   // MARK: - PROPERTY
-  
   @AppStorage("lineCount") var lineCount: Int = 1
   
   @State private var notes: [Note] = [Note]()
   @State private var text: String = ""
   
   // MARK: - FUNCTION
-  
   func getDocumentDirectory() -> URL {
     let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
     return path[0]
@@ -64,7 +62,6 @@ struct ContentView: View {
   }
 
   // MARK: - BODY
-  
   var body: some View {
     VStack {
       HStack(alignment: .center, spacing: 6) {
@@ -100,7 +97,13 @@ struct ContentView: View {
       if notes.count >= 1 {
         List {
           ForEach(0..<notes.count, id: \.self) { i in
-//            NavigationLink(destination: DetailView(note: notes[i], count: notes.count, index: i)) {
+            NavigationLink(
+                destination: DetailView(
+                    note: notes[i],
+                    count: notes.count,
+                    index: i
+                )
+            ) {
               HStack {
                 Capsule()
                   .frame(width: 4)
@@ -108,8 +111,8 @@ struct ContentView: View {
                 Text(notes[i].text)
                   .lineLimit(lineCount)
                   .padding(.leading, 5)
-//              }
-            } //: HSTACK
+              }//: HSTACK
+            }
           } //: LOOP
           .onDelete(perform: delete)
         }
@@ -132,7 +135,6 @@ struct ContentView: View {
 }
 
 // MARK: - PREVIEW
-
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()

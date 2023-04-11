@@ -13,6 +13,10 @@
 		C331CC8F29E5148C0059EFB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C331CC8E29E5148C0059EFB6 /* Assets.xcassets */; };
 		C331CC9229E5148C0059EFB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C331CC9129E5148C0059EFB6 /* Preview Assets.xcassets */; };
 		C331CC9F29E517180059EFB6 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CC9E29E517180059EFB6 /* Note.swift */; };
+		C331CCA129E532880059EFB6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CCA029E532880059EFB6 /* DetailView.swift */; };
+		C331CCA329E535FA0059EFB6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CCA229E535FA0059EFB6 /* HeaderView.swift */; };
+		C331CCA629E536440059EFB6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CCA529E536440059EFB6 /* SettingsView.swift */; };
+		C331CCA829E5366F0059EFB6 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CCA729E5366F0059EFB6 /* CreditsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		C331CC8E29E5148C0059EFB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C331CC9129E5148C0059EFB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C331CC9E29E517180059EFB6 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		C331CCA029E532880059EFB6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		C331CCA229E535FA0059EFB6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		C331CCA529E536440059EFB6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C331CCA729E5366F0059EFB6 /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 		C331CC8929E5148B0059EFB6 /* Notes Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				C331CCA429E536220059EFB6 /* Component */,
 				C331CC9D29E516FC0059EFB6 /* Model */,
 				C331CC9C29E516E50059EFB6 /* View */,
 				C331CC8A29E5148B0059EFB6 /* NotesApp.swift */,
@@ -101,6 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				C331CC8C29E5148B0059EFB6 /* ContentView.swift */,
+				C331CCA029E532880059EFB6 /* DetailView.swift */,
+				C331CCA529E536440059EFB6 /* SettingsView.swift */,
+				C331CCA729E5366F0059EFB6 /* CreditsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -111,6 +123,14 @@
 				C331CC9E29E517180059EFB6 /* Note.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C331CCA429E536220059EFB6 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				C331CCA229E535FA0059EFB6 /* HeaderView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +231,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C331CCA329E535FA0059EFB6 /* HeaderView.swift in Sources */,
+				C331CCA829E5366F0059EFB6 /* CreditsView.swift in Sources */,
 				C331CC8D29E5148B0059EFB6 /* ContentView.swift in Sources */,
+				C331CCA129E532880059EFB6 /* DetailView.swift in Sources */,
+				C331CCA629E536440059EFB6 /* SettingsView.swift in Sources */,
 				C331CC8B29E5148B0059EFB6 /* NotesApp.swift in Sources */,
 				C331CC9F29E517180059EFB6 /* Note.swift in Sources */,
 			);
@@ -410,7 +434,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.patriciafiona.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -426,7 +454,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.patriciafiona.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
