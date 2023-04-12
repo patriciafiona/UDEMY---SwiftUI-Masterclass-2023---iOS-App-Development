@@ -73,7 +73,7 @@ App appearance toggle (Light and Dark mode)
 Launch Screen
 
 ## Video
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/v9m5nvb-Uds/0.jpg)](https://www.youtube.com/watch?v=v9m5nvb-Uds&ab_channel=CredoAcademy)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/5wIfHyZuDsc/0.jpg)](https://www.youtube.com/watch?v=5wIfHyZuDsc&ab_channel=CredoAcademy)
 
 ## Requirements
 - Xcode 14 from Apple (free)
