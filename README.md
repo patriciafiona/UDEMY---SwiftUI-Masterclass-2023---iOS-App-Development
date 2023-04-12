@@ -86,3 +86,8 @@ Using app storage to restart the iPhone application
 
 <p align="center">All rights reserved © SwiftUI Masterclass 2023 - iOS App Development & Swift | Robert Petras</p>
 <p align="center">SwiftUI • iOS • macOS • watchOS • iPadOS Developer</p>
+
+## VI. 💖 Support the Project
+Thank you so much already visiting my projects! If you want to support my open source work, please star this repository. 
+
+[![Platform](https://img.shields.io/badge/XCode-14.3%20beta%203-blue)](https://developer.apple.com/xcode/)
