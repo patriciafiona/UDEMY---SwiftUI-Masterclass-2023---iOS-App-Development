@@ -69,7 +69,6 @@ Using app storage to restart the iPhone application
 
 ## III. Video
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/nrFqqxSUTrY/0.jpg)](https://www.youtube.com/watch?v=nrFqqxSUTrY&ab_channel=CredoAcademy)
-<p align="center">Video Preview</p>
 
 ## IV. Requirements
 - Xcode 14 from Apple (free)
