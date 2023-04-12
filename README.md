@@ -67,14 +67,18 @@ Parallax effect and animation
 
 Using app storage to restart the iPhone application
 
-## III. Requirements
+## III. Video
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/nrFqqxSUTrY/0.jpg)](https://www.youtube.com/watch?v=nrFqqxSUTrY&ab_channel=CredoAcademy)
+<p align="center">Video Preview</p>
+
+## IV. Requirements
 - Xcode 14 from Apple (free)
 - macOS 13 Ventura from Apple (free)
 - Willing to create awesome apps by following the instructor step by step
 - You do not need any other prior programming experience or knowledge
 - Macintosh computer
 
-## IV. Credit
+## V. Credit
 <p align="center">
 <img width="200" alt="image" src="https://user-images.githubusercontent.com/32255348/231326634-9f0d1f6e-60e8-497f-9805-0a019c34f5fe.png">
 </p>
