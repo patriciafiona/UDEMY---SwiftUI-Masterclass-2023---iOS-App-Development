@@ -14,6 +14,7 @@
 		C331CCE929E7A07A0059EFB6 /* sound-chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331CCE829E7A07A0059EFB6 /* sound-chime.mp3 */; };
 		C331CCEE29E7A17C0059EFB6 /* card-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = C331CCED29E7A17C0059EFB6 /* card-data.txt */; };
 		C331CCF229E7A7F80059EFB6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CCF129E7A7F80059EFB6 /* CardView.swift */; };
+		C331CCF629E7AD7F0059EFB6 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CCF529E7AD7F0059EFB6 /* CardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C331CCED29E7A17C0059EFB6 /* card-data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "card-data.txt"; sourceTree = "<group>"; };
 		C331CCEF29E7A27E0059EFB6 /* Learn-by-Doing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Learn-by-Doing-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C331CCF129E7A7F80059EFB6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C331CCF529E7AD7F0059EFB6 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,8 @@
 		C331CCD529E79EF60059EFB6 /* Learn by Doing */ = {
 			isa = PBXGroup;
 			children = (
+				C331CCF329E7AD390059EFB6 /* Resource */,
 				C331CCEF29E7A27E0059EFB6 /* Learn-by-Doing-Info.plist */,
-				C331CCEA29E7A1230059EFB6 /* Data */,
 				C331CCE529E7A01E0059EFB6 /* Sound */,
 				C331CCE429E79EFE0059EFB6 /* View */,
 				C331CCD629E79EF60059EFB6 /* Learn_by_DoingApp.swift */,
@@ -108,6 +110,23 @@
 				C331CCF129E7A7F80059EFB6 /* CardView.swift */,
 			);
 			path = Widget;
+			sourceTree = "<group>";
+		};
+		C331CCF329E7AD390059EFB6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C331CCF429E7AD440059EFB6 /* Model */,
+				C331CCEA29E7A1230059EFB6 /* Data */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C331CCF429E7AD440059EFB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C331CCF529E7AD7F0059EFB6 /* CardModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C331CCD929E79EF60059EFB6 /* ContentView.swift in Sources */,
+				C331CCF629E7AD7F0059EFB6 /* CardModel.swift in Sources */,
 				C331CCF229E7A7F80059EFB6 /* CardView.swift in Sources */,
 				C331CCD729E79EF60059EFB6 /* Learn_by_DoingApp.swift in Sources */,
 			);
