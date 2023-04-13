@@ -86,3 +86,4 @@ A new way to create Launch Screen in iOS 14 app development
 Thank you so much already visiting my projects! If you want to support my open source work, please star this repository. 
 
 [![Platform](https://img.shields.io/badge/XCode-14.3%20beta%203-blue)](https://developer.apple.com/xcode/)
+[![Platform](https://img.shields.io/badge/Last%20updated-April%202023-orange)](https://www.udemy.com/course/swiftui-masterclass-course-ios-development-with-swift/)
