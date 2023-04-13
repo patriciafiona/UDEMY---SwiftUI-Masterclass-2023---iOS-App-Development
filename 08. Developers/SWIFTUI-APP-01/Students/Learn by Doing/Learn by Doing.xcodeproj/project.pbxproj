@@ -13,6 +13,7 @@
 		C331CCDE29E79EF70059EFB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C331CCDD29E79EF70059EFB6 /* Preview Assets.xcassets */; };
 		C331CCE929E7A07A0059EFB6 /* sound-chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C331CCE829E7A07A0059EFB6 /* sound-chime.mp3 */; };
 		C331CCEE29E7A17C0059EFB6 /* card-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = C331CCED29E7A17C0059EFB6 /* card-data.txt */; };
+		C331CCF229E7A7F80059EFB6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CCF129E7A7F80059EFB6 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,8 @@
 		C331CCDD29E79EF70059EFB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C331CCE829E7A07A0059EFB6 /* sound-chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-chime.mp3"; sourceTree = "<group>"; };
 		C331CCED29E7A17C0059EFB6 /* card-data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "card-data.txt"; sourceTree = "<group>"; };
+		C331CCEF29E7A27E0059EFB6 /* Learn-by-Doing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Learn-by-Doing-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C331CCF129E7A7F80059EFB6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 		C331CCD529E79EF60059EFB6 /* Learn by Doing */ = {
 			isa = PBXGroup;
 			children = (
+				C331CCEF29E7A27E0059EFB6 /* Learn-by-Doing-Info.plist */,
 				C331CCEA29E7A1230059EFB6 /* Data */,
 				C331CCE529E7A01E0059EFB6 /* Sound */,
 				C331CCE429E79EFE0059EFB6 /* View */,
@@ -76,6 +80,7 @@
 		C331CCE429E79EFE0059EFB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C331CCF029E7A7ED0059EFB6 /* Widget */,
 				C331CCD829E79EF60059EFB6 /* ContentView.swift */,
 			);
 			path = View;
@@ -95,6 +100,14 @@
 				C331CCED29E7A17C0059EFB6 /* card-data.txt */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		C331CCF029E7A7ED0059EFB6 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				C331CCF129E7A7F80059EFB6 /* CardView.swift */,
+			);
+			path = Widget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C331CCD929E79EF60059EFB6 /* ContentView.swift in Sources */,
+				C331CCF229E7A7F80059EFB6 /* CardView.swift in Sources */,
 				C331CCD729E79EF60059EFB6 /* Learn_by_DoingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,9 +316,9 @@
 				DEVELOPMENT_TEAM = 828D2J84L9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Learn-by-Doing-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -331,9 +345,9 @@
 				DEVELOPMENT_TEAM = 828D2J84L9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Learn-by-Doing-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
