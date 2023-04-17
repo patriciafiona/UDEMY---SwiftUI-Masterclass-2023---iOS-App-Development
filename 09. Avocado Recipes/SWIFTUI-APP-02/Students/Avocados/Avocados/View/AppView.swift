@@ -35,7 +35,7 @@ struct AppView: View {
                     Text("Ripening")
                 })
             
-            SettingView()
+            SettingsView()
                 .tabItem({
                     Image("tabicon-settings")
                         .padding()
