@@ -17,30 +17,39 @@ struct AppView: View {
             AvocadosView()
                 .tabItem({
                     Image("tabicon-branch")
+                        .padding()
                     Text("Avocado")
                 })
             
             ContentView()
                 .tabItem({
                     Image("tabicon-book")
+                        .padding()
                     Text("Recipes")
                 })
             
             RipeningStagesView()
                 .tabItem({
                     Image("tabicon-avocado")
+                        .padding()
                     Text("Ripening")
                 })
             
             SettingView()
                 .tabItem({
                     Image("tabicon-settings")
+                        .padding()
                     Text("Settings")
                 })
         }
         .task {
             try? await Task.sleep(for: Duration.seconds(1))
             self.launchScreenState.dismiss()
+        }
+        .onAppear {
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithDefaultBackground()
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
         }
     }
 }

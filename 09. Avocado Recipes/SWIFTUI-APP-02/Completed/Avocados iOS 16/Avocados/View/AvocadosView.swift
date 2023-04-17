@@ -1,19 +1,17 @@
 //
-//  AvocadosView.swift
-//  Avocados
-//
-//  Created by Administrator on 17/04/23.
+//  Created by Robert Petras
+//  Credo Academy ♥ Design and Code
+//  https://credo.academy
 //
 
 import SwiftUI
 
 struct AvocadosView: View {
   // MARK: - PROPERTIES
-    @Environment(\.colorScheme) var colorScheme
-    @State private var pulsateAnimation: Bool = false
   
-    // MARK: - BODY
-    var body: some View {
+  @State private var pulsateAnimation: Bool = false
+  
+  var body: some View {
     VStack {
       Spacer()
       
@@ -33,9 +31,9 @@ struct AvocadosView: View {
           .padding()
           .shadow(color: Color("ColorBlackTransparentDark"), radius: 4, x: 0, y: 4)
         Text("""
-    Creamy, green, and full of nutrients!
-    Avocado is a powerhouse ingredient at any meal. Enjoy these handpicked avocado recipes for breakfast, lunch, dinner & more!
-    """)
+Creamy, green, and full of nutrients!
+Avocado is a powerhouse ingredient at any meal. Enjoy these handpicked avocado recipes for breakfast, lunch, dinner & more!
+""")
           .lineLimit(nil)
           .font(.system(.headline, design: .serif))
           .foregroundColor(Color("ColorGreenLight"))
@@ -48,7 +46,7 @@ struct AvocadosView: View {
       Spacer()
     }
     .background(
-      Image(colorScheme == .dark ? "background-dark" : "background")
+      Image("background")
         .resizable()
         .aspectRatio(contentMode: .fill)
     )
@@ -56,11 +54,13 @@ struct AvocadosView: View {
       .onAppear(perform: {
         self.pulsateAnimation.toggle()
       })
-    }
+  }
 }
 
 struct AvocadosView_Previews: PreviewProvider {
-    static var previews: some View {
-        AvocadosView()
-    }
+  static var previews: some View {
+    AvocadosView()
+      .previewDevice("iPhone 13")
+      .environment(\.colorScheme, .dark)
+  }
 }
