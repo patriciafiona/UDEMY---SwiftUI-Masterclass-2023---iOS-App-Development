@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     // MARK: - PROPERTIES
-    @EnvironmentObject private var launchScreenState: LaunchScreenStateManager
         
     // MARK: - BODY
     var body: some View {
@@ -20,10 +19,6 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
-        .task {
-            try? await Task.sleep(for: Duration.seconds(1))
-            self.launchScreenState.dismiss()
-        }
     }
 }
 

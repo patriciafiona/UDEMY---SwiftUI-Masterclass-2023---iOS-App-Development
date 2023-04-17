@@ -19,6 +19,10 @@
 		C331CD3D29ED03160059EFB6 /* LaunchScreenStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CD3C29ED03160059EFB6 /* LaunchScreenStep.swift */; };
 		C331CD3F29ED03300059EFB6 /* LaunchScreenStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CD3E29ED03300059EFB6 /* LaunchScreenStateManager.swift */; };
 		C331CD4129ED03790059EFB6 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CD4029ED03790059EFB6 /* LaunchScreenView.swift */; };
+		C331CD4529ED1ADD0059EFB6 /* AvocadosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CD4429ED1ADD0059EFB6 /* AvocadosView.swift */; };
+		C331CD4729ED1AF00059EFB6 /* RipeningStagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CD4629ED1AF00059EFB6 /* RipeningStagesView.swift */; };
+		C331CD4929ED1B130059EFB6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CD4829ED1B130059EFB6 /* SettingsView.swift */; };
+		C331CD4B29ED1B370059EFB6 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CD4A29ED1B370059EFB6 /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		C331CD3C29ED03160059EFB6 /* LaunchScreenStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenStep.swift; sourceTree = "<group>"; };
 		C331CD3E29ED03300059EFB6 /* LaunchScreenStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenStateManager.swift; sourceTree = "<group>"; };
 		C331CD4029ED03790059EFB6 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		C331CD4429ED1ADD0059EFB6 /* AvocadosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosView.swift; sourceTree = "<group>"; };
+		C331CD4629ED1AF00059EFB6 /* RipeningStagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningStagesView.swift; sourceTree = "<group>"; };
+		C331CD4829ED1B130059EFB6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C331CD4A29ED1B370059EFB6 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 				C331CD3A29ED02AD0059EFB6 /* Info.plist */,
 				C331CD2329ECFBD80059EFB6 /* App */,
 				C331CD2529ED01C90059EFB6 /* Data */,
+				C331CD4329ED1AB60059EFB6 /* Model */,
 				C331CD2429ECFBDD0059EFB6 /* View */,
 				C331CD3B29ED030F0059EFB6 /* Utils */,
 				C331CD1B29ECF7D90059EFB6 /* Preview Content */,
@@ -100,6 +109,10 @@
 			children = (
 				C331CD4229ED07660059EFB6 /* Splash Screen */,
 				C331CD1729ECF7D80059EFB6 /* ContentView.swift */,
+				C331CD4429ED1ADD0059EFB6 /* AvocadosView.swift */,
+				C331CD4629ED1AF00059EFB6 /* RipeningStagesView.swift */,
+				C331CD4829ED1B130059EFB6 /* SettingsView.swift */,
+				C331CD4A29ED1B370059EFB6 /* AppView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -131,6 +144,13 @@
 				C331CD4029ED03790059EFB6 /* LaunchScreenView.swift */,
 			);
 			path = "Splash Screen";
+			sourceTree = "<group>";
+		};
+		C331CD4329ED1AB60059EFB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +230,11 @@
 			files = (
 				C331CD4129ED03790059EFB6 /* LaunchScreenView.swift in Sources */,
 				C331CD3D29ED03160059EFB6 /* LaunchScreenStep.swift in Sources */,
+				C331CD4B29ED1B370059EFB6 /* AppView.swift in Sources */,
+				C331CD4529ED1ADD0059EFB6 /* AvocadosView.swift in Sources */,
 				C331CD3F29ED03300059EFB6 /* LaunchScreenStateManager.swift in Sources */,
+				C331CD4729ED1AF00059EFB6 /* RipeningStagesView.swift in Sources */,
+				C331CD4929ED1B130059EFB6 /* SettingsView.swift in Sources */,
 				C331CD1829ECF7D80059EFB6 /* ContentView.swift in Sources */,
 				C331CD1629ECF7D80059EFB6 /* AvocadosApp.swift in Sources */,
 			);

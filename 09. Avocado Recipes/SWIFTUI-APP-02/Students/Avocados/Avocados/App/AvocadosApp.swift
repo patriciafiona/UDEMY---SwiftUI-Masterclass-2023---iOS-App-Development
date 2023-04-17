@@ -15,7 +15,7 @@ struct AvocadosApp: App {
     var body: some Scene {
         WindowGroup {
             ZStack {
-                ContentView()
+                AppView()
                 
                 if launchScreenState.state != .finished {
                     LaunchScreenView()
