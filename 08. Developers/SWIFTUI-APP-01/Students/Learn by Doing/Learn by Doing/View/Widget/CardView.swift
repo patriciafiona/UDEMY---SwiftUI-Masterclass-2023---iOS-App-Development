@@ -12,10 +12,18 @@ struct CardView: View {
     var data: Card
     var gradients: [Color] = [Color("Color01"), Color("Color02")]
     
+    @State private var fadeIn: Bool = false
+    @State private var moveDownward: Bool = false
+    @State private var moveUpward: Bool = false
+    @State private var showAlert: Bool = false
+    
+    var hapticFeedback = UIImpactFeedbackGenerator(style: .heavy)
+    
     // MARK: - BODY
     var body: some View {
         ZStack {
             Image(data.imageName)
+                .opacity(fadeIn ? 1.0 : 0.0)
             
             VStack {
                 Text(data.title)
@@ -29,9 +37,13 @@ struct CardView: View {
                     .foregroundColor(.white)
                     .italic()
             }
-            .offset(y: -218)
+            .offset(y: moveDownward ? -218 : -300)
             
-            Button(action: {}) {
+            Button(action: {
+                playSound(sound: "sound-chime", type: "mp3")
+                self.hapticFeedback.impactOccurred()
+                self.showAlert.toggle()
+            }) {
                 HStack {
                     Text(data.callToAction.uppercased())
                         .fontWeight(.heavy)
@@ -49,7 +61,7 @@ struct CardView: View {
                 .clipShape(Capsule())
                 .shadow(color: Color("ColorShadow") ,radius: 6, x: 0, y: 3)
             }
-            .offset(y: 210)
+            .offset(y: moveUpward ? 210 : 300)
         }
         .frame(width: 335, height: 545)
         .background(
@@ -57,6 +69,22 @@ struct CardView: View {
         )
         .cornerRadius(16)
         .shadow(radius: 8)
+        .onAppear() {
+            withAnimation(.linear(duration: 1.2)) {
+                self.fadeIn.toggle()
+            }
+            withAnimation(.linear(duration: 0.8)) {
+                self.moveDownward.toggle()
+                self.moveUpward.toggle()
+            }
+        }
+        .alert(isPresented: $showAlert) {
+            Alert(
+                title: Text(data.title),
+                message: Text(data.message),
+                dismissButton: .default(Text("OK"))
+            )
+        }
     }
 }
 
