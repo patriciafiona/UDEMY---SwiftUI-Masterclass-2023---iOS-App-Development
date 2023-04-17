@@ -11,6 +11,14 @@
 		C331CD1829ECF7D80059EFB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CD1729ECF7D80059EFB6 /* ContentView.swift */; };
 		C331CD1A29ECF7D90059EFB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C331CD1929ECF7D90059EFB6 /* Assets.xcassets */; };
 		C331CD1D29ECF7D90059EFB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C331CD1C29ECF7D90059EFB6 /* Preview Assets.xcassets */; };
+		C331CD3529ED021A0059EFB6 /* RecipeData.txt in Resources */ = {isa = PBXBuildFile; fileRef = C331CD3029ED021A0059EFB6 /* RecipeData.txt */; };
+		C331CD3629ED021A0059EFB6 /* RipeningData.txt in Resources */ = {isa = PBXBuildFile; fileRef = C331CD3129ED021A0059EFB6 /* RipeningData.txt */; };
+		C331CD3729ED021A0059EFB6 /* FactData.txt in Resources */ = {isa = PBXBuildFile; fileRef = C331CD3229ED021A0059EFB6 /* FactData.txt */; };
+		C331CD3829ED021A0059EFB6 /* Avocados.txt in Resources */ = {isa = PBXBuildFile; fileRef = C331CD3329ED021A0059EFB6 /* Avocados.txt */; };
+		C331CD3929ED021A0059EFB6 /* HeaderData.txt in Resources */ = {isa = PBXBuildFile; fileRef = C331CD3429ED021A0059EFB6 /* HeaderData.txt */; };
+		C331CD3D29ED03160059EFB6 /* LaunchScreenStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CD3C29ED03160059EFB6 /* LaunchScreenStep.swift */; };
+		C331CD3F29ED03300059EFB6 /* LaunchScreenStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CD3E29ED03300059EFB6 /* LaunchScreenStateManager.swift */; };
+		C331CD4129ED03790059EFB6 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C331CD4029ED03790059EFB6 /* LaunchScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,15 @@
 		C331CD1729ECF7D80059EFB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C331CD1929ECF7D90059EFB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C331CD1C29ECF7D90059EFB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C331CD3029ED021A0059EFB6 /* RecipeData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RecipeData.txt; sourceTree = "<group>"; };
+		C331CD3129ED021A0059EFB6 /* RipeningData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RipeningData.txt; sourceTree = "<group>"; };
+		C331CD3229ED021A0059EFB6 /* FactData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FactData.txt; sourceTree = "<group>"; };
+		C331CD3329ED021A0059EFB6 /* Avocados.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Avocados.txt; sourceTree = "<group>"; };
+		C331CD3429ED021A0059EFB6 /* HeaderData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HeaderData.txt; sourceTree = "<group>"; };
+		C331CD3A29ED02AD0059EFB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C331CD3C29ED03160059EFB6 /* LaunchScreenStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenStep.swift; sourceTree = "<group>"; };
+		C331CD3E29ED03300059EFB6 /* LaunchScreenStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenStateManager.swift; sourceTree = "<group>"; };
+		C331CD4029ED03790059EFB6 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +68,11 @@
 		C331CD1429ECF7D80059EFB6 /* Avocados */ = {
 			isa = PBXGroup;
 			children = (
+				C331CD3A29ED02AD0059EFB6 /* Info.plist */,
 				C331CD2329ECFBD80059EFB6 /* App */,
+				C331CD2529ED01C90059EFB6 /* Data */,
 				C331CD2429ECFBDD0059EFB6 /* View */,
+				C331CD3B29ED030F0059EFB6 /* Utils */,
 				C331CD1B29ECF7D90059EFB6 /* Preview Content */,
 			);
 			path = Avocados;
@@ -78,9 +98,39 @@
 		C331CD2429ECFBDD0059EFB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C331CD4229ED07660059EFB6 /* Splash Screen */,
 				C331CD1729ECF7D80059EFB6 /* ContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C331CD2529ED01C90059EFB6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C331CD3329ED021A0059EFB6 /* Avocados.txt */,
+				C331CD3229ED021A0059EFB6 /* FactData.txt */,
+				C331CD3429ED021A0059EFB6 /* HeaderData.txt */,
+				C331CD3029ED021A0059EFB6 /* RecipeData.txt */,
+				C331CD3129ED021A0059EFB6 /* RipeningData.txt */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C331CD3B29ED030F0059EFB6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C331CD3C29ED03160059EFB6 /* LaunchScreenStep.swift */,
+				C331CD3E29ED03300059EFB6 /* LaunchScreenStateManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C331CD4229ED07660059EFB6 /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C331CD4029ED03790059EFB6 /* LaunchScreenView.swift */,
+			);
+			path = "Splash Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +191,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C331CD3829ED021A0059EFB6 /* Avocados.txt in Resources */,
+				C331CD3629ED021A0059EFB6 /* RipeningData.txt in Resources */,
 				C331CD1D29ECF7D90059EFB6 /* Preview Assets.xcassets in Resources */,
+				C331CD3729ED021A0059EFB6 /* FactData.txt in Resources */,
 				C331CD1A29ECF7D90059EFB6 /* Assets.xcassets in Resources */,
+				C331CD3929ED021A0059EFB6 /* HeaderData.txt in Resources */,
+				C331CD3529ED021A0059EFB6 /* RecipeData.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C331CD4129ED03790059EFB6 /* LaunchScreenView.swift in Sources */,
+				C331CD3D29ED03160059EFB6 /* LaunchScreenStep.swift in Sources */,
+				C331CD3F29ED03300059EFB6 /* LaunchScreenStateManager.swift in Sources */,
 				C331CD1829ECF7D80059EFB6 /* ContentView.swift in Sources */,
 				C331CD1629ECF7D80059EFB6 /* AvocadosApp.swift in Sources */,
 			);
@@ -286,18 +344,18 @@
 				DEVELOPMENT_TEAM = 828D2J84L9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Avocados/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.patriciafiona.Avocados;
+				PRODUCT_BUNDLE_IDENTIFIER = com.patriciafiona.avocados;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -316,18 +374,18 @@
 				DEVELOPMENT_TEAM = 828D2J84L9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Avocados/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.patriciafiona.Avocados;
+				PRODUCT_BUNDLE_IDENTIFIER = com.patriciafiona.avocados;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
