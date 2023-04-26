@@ -27,6 +27,7 @@
 		C39D415D29F9106300764000 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D415C29F9106300764000 /* Extensions.swift */; };
 		C39D415F29F912FF00764000 /* ReelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D415E29F912FF00764000 /* ReelView.swift */; };
 		C39D416129F9195100764000 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D416029F9195100764000 /* PlaySound.swift */; };
+		C39D416329F91BE100764000 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D416229F91BE100764000 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		C39D415C29F9106300764000 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C39D415E29F912FF00764000 /* ReelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelView.swift; sourceTree = "<group>"; };
 		C39D416029F9195100764000 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		C39D416229F91BE100764000 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			children = (
 				C36A35F329F8C9090075F871 /* Splash Screen */,
 				C36A35BD29F8C4CA0075F871 /* MainView.swift */,
+				C39D416229F91BE100764000 /* InfoView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C36A35FB29F8CA340075F871 /* LaunchScreenStep.swift in Sources */,
+				C39D416329F91BE100764000 /* InfoView.swift in Sources */,
 				C33AC33A29F8D2190046ED15 /* LogoView.swift in Sources */,
 				C36A35F929F8CA190075F871 /* LaunchScreenStateManager.swift in Sources */,
 				C39D415F29F912FF00764000 /* ReelView.swift in Sources */,

@@ -141,7 +141,6 @@ struct MainView: View {
                 }
                 
                 // MARK: - SLOT MACHINE
-                
                 Spacer()
                 
                 VStack(alignment: .center, spacing: 0) {
@@ -231,8 +230,6 @@ struct MainView: View {
                       .modifier(BetCapsuleModifier())
                     }
                 }
-                
-                // MARK: - POPUP
             }//:VSTACK
             .overlay(
                 // RESET
@@ -244,7 +241,9 @@ struct MainView: View {
             )
             .overlay(
                 // INFO
-                Button(action: {}) {
+                Button(action: {
+                    self.showingInfoView = true
+                }) {
                     Image(systemName: "info.circle")
                 }
                 .modifier(ButtonModifier()),
@@ -252,7 +251,12 @@ struct MainView: View {
             )
             .padding()
             .frame(maxWidth: 720)
+            
+            // MARK: - POPUP
         }//: ZSTACK
+        .sheet(isPresented: $showingInfoView) {
+            InfoView()
+        }
         .task {
             try? await Task.sleep(for: Duration.seconds(1.5))
             self.launchScreenState.dismiss()
