@@ -10,7 +10,7 @@
 		C33AC33A29F8D2190046ED15 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AC33929F8D2190046ED15 /* LogoView.swift */; };
 		C33AC33C29F8D2640046ED15 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AC33B29F8D2640046ED15 /* Modifiers.swift */; };
 		C36A35BC29F8C4CA0075F871 /* Slot_MachineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A35BB29F8C4CA0075F871 /* Slot_MachineApp.swift */; };
-		C36A35BE29F8C4CA0075F871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A35BD29F8C4CA0075F871 /* ContentView.swift */; };
+		C36A35BE29F8C4CA0075F871 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A35BD29F8C4CA0075F871 /* MainView.swift */; };
 		C36A35C029F8C4CB0075F871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36A35BF29F8C4CB0075F871 /* Assets.xcassets */; };
 		C36A35C329F8C4CB0075F871 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36A35C229F8C4CB0075F871 /* Preview Assets.xcassets */; };
 		C36A35E829F8C6180075F871 /* background-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C36A35E029F8C6180075F871 /* background-music.mp3 */; };
@@ -26,6 +26,7 @@
 		C36A35FB29F8CA340075F871 /* LaunchScreenStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A35FA29F8CA340075F871 /* LaunchScreenStep.swift */; };
 		C39D415D29F9106300764000 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D415C29F9106300764000 /* Extensions.swift */; };
 		C39D415F29F912FF00764000 /* ReelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D415E29F912FF00764000 /* ReelView.swift */; };
+		C39D416129F9195100764000 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D416029F9195100764000 /* PlaySound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +34,7 @@
 		C33AC33B29F8D2640046ED15 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		C36A35B829F8C4CA0075F871 /* Slot Machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slot Machine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36A35BB29F8C4CA0075F871 /* Slot_MachineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot_MachineApp.swift; sourceTree = "<group>"; };
-		C36A35BD29F8C4CA0075F871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C36A35BD29F8C4CA0075F871 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C36A35BF29F8C4CB0075F871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C36A35C229F8C4CB0075F871 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C36A35E029F8C6180075F871 /* background-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "background-music.mp3"; sourceTree = "<group>"; };
@@ -50,6 +51,7 @@
 		C36A35FA29F8CA340075F871 /* LaunchScreenStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenStep.swift; sourceTree = "<group>"; };
 		C39D415C29F9106300764000 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C39D415E29F912FF00764000 /* ReelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelView.swift; sourceTree = "<group>"; };
+		C39D416029F9195100764000 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				C36A35F729F8C9FD0075F871 /* Splash Helper */,
 				C33AC33B29F8D2640046ED15 /* Modifiers.swift */,
 				C39D415C29F9106300764000 /* Extensions.swift */,
+				C39D416029F9195100764000 /* PlaySound.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -138,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				C36A35F329F8C9090075F871 /* Splash Screen */,
-				C36A35BD29F8C4CA0075F871 /* ContentView.swift */,
+				C36A35BD29F8C4CA0075F871 /* MainView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -261,7 +264,8 @@
 				C36A35F929F8CA190075F871 /* LaunchScreenStateManager.swift in Sources */,
 				C39D415F29F912FF00764000 /* ReelView.swift in Sources */,
 				C39D415D29F9106300764000 /* Extensions.swift in Sources */,
-				C36A35BE29F8C4CA0075F871 /* ContentView.swift in Sources */,
+				C39D416129F9195100764000 /* PlaySound.swift in Sources */,
+				C36A35BE29F8C4CA0075F871 /* MainView.swift in Sources */,
 				C36A35BC29F8C4CA0075F871 /* Slot_MachineApp.swift in Sources */,
 				C36A35F529F8C9230075F871 /* LaunchScreenView.swift in Sources */,
 				C33AC33C29F8D2640046ED15 /* Modifiers.swift in Sources */,

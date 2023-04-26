@@ -14,7 +14,7 @@ struct Slot_MachineApp: App {
     var body: some Scene {
         WindowGroup {
             ZStack {
-                ContentView()
+                MainView()
                 
                 if launchScreenState.state != .finished {
                     LaunchScreenView()
