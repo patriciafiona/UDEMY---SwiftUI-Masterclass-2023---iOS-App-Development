@@ -120,7 +120,7 @@ struct MainView: View {
                             .scoreLableStyle()
                             .multilineTextAlignment(.trailing)
                         
-                        Text("100")
+                        Text("\(coins)")
                             .scoreNumberStyle()
                             .modifier(ScoreNumberModifier())
                     }
@@ -129,7 +129,7 @@ struct MainView: View {
                     Spacer()
                     
                     HStack {
-                        Text("200")
+                        Text("\(highscore)")
                             .scoreNumberStyle()
                             .modifier(ScoreNumberModifier())
                         
@@ -147,7 +147,7 @@ struct MainView: View {
                     // MARK: - REELS #1
                     ZStack {
                         ReelView()
-                        Image("gfx-bell")
+                        Image(symbols[reels[0]])
                             .resizable()
                             .modifier(ImageModifier())
                     }
@@ -156,7 +156,7 @@ struct MainView: View {
                         // MARK: - REELS #2
                         ZStack {
                             ReelView()
-                            Image("gfx-seven")
+                            Image(symbols[reels[1]])
                                 .resizable()
                                 .modifier(ImageModifier())
                         }
@@ -166,7 +166,7 @@ struct MainView: View {
                         // MARK: - REELS #3
                         ZStack {
                             ReelView()
-                            Image("gfx-cherry")
+                            Image(symbols[reels[2]])
                                 .resizable()
                                 .modifier(ImageModifier())
                         }
@@ -174,7 +174,11 @@ struct MainView: View {
                     .frame(maxWidth: 500)
                     
                     // MARK: - SPIN BUTTON
-                    Button(action: {}) {
+                    Button(action: {
+                        self.spinReels()
+                        
+                        self.checkWinning()
+                    }) {
                         Image("gfx-spin")
                             .renderingMode(.original)
                             .resizable()
