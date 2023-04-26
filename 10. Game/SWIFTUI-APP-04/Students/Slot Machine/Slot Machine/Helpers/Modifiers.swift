@@ -41,3 +41,16 @@ struct ScoreContainerModifier: ViewModifier {
             )
     }
 }
+
+struct ImageModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .scaledToFit()
+            .frame(
+                minWidth: 140, idealWidth: 200, maxWidth: 220,
+                minHeight: 130, idealHeight: 190, maxHeight: 200,
+                alignment: .center
+            )
+            .modifier(ShadowModifier())
+    }
+}

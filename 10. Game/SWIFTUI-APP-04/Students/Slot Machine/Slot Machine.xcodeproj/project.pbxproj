@@ -25,6 +25,7 @@
 		C36A35F929F8CA190075F871 /* LaunchScreenStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A35F829F8CA190075F871 /* LaunchScreenStateManager.swift */; };
 		C36A35FB29F8CA340075F871 /* LaunchScreenStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A35FA29F8CA340075F871 /* LaunchScreenStep.swift */; };
 		C39D415D29F9106300764000 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D415C29F9106300764000 /* Extensions.swift */; };
+		C39D415F29F912FF00764000 /* ReelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D415E29F912FF00764000 /* ReelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		C36A35F829F8CA190075F871 /* LaunchScreenStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenStateManager.swift; sourceTree = "<group>"; };
 		C36A35FA29F8CA340075F871 /* LaunchScreenStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenStep.swift; sourceTree = "<group>"; };
 		C39D415C29F9106300764000 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C39D415E29F912FF00764000 /* ReelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				C33AC33929F8D2190046ED15 /* LogoView.swift */,
+				C39D415E29F912FF00764000 /* ReelView.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				C36A35FB29F8CA340075F871 /* LaunchScreenStep.swift in Sources */,
 				C33AC33A29F8D2190046ED15 /* LogoView.swift in Sources */,
 				C36A35F929F8CA190075F871 /* LaunchScreenStateManager.swift in Sources */,
+				C39D415F29F912FF00764000 /* ReelView.swift in Sources */,
 				C39D415D29F9106300764000 /* Extensions.swift in Sources */,
 				C36A35BE29F8C4CA0075F871 /* ContentView.swift in Sources */,
 				C36A35BC29F8C4CA0075F871 /* Slot_MachineApp.swift in Sources */,
