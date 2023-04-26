@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C33AC33A29F8D2190046ED15 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AC33929F8D2190046ED15 /* LogoView.swift */; };
+		C33AC33C29F8D2640046ED15 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33AC33B29F8D2640046ED15 /* Modifiers.swift */; };
 		C36A35BC29F8C4CA0075F871 /* Slot_MachineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A35BB29F8C4CA0075F871 /* Slot_MachineApp.swift */; };
 		C36A35BE29F8C4CA0075F871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A35BD29F8C4CA0075F871 /* ContentView.swift */; };
 		C36A35C029F8C4CB0075F871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36A35BF29F8C4CB0075F871 /* Assets.xcassets */; };
@@ -22,9 +24,12 @@
 		C36A35F529F8C9230075F871 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A35F429F8C9230075F871 /* LaunchScreenView.swift */; };
 		C36A35F929F8CA190075F871 /* LaunchScreenStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A35F829F8CA190075F871 /* LaunchScreenStateManager.swift */; };
 		C36A35FB29F8CA340075F871 /* LaunchScreenStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36A35FA29F8CA340075F871 /* LaunchScreenStep.swift */; };
+		C39D415D29F9106300764000 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39D415C29F9106300764000 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C33AC33929F8D2190046ED15 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		C33AC33B29F8D2640046ED15 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		C36A35B829F8C4CA0075F871 /* Slot Machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slot Machine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36A35BB29F8C4CA0075F871 /* Slot_MachineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slot_MachineApp.swift; sourceTree = "<group>"; };
 		C36A35BD29F8C4CA0075F871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +47,7 @@
 		C36A35F429F8C9230075F871 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		C36A35F829F8CA190075F871 /* LaunchScreenStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenStateManager.swift; sourceTree = "<group>"; };
 		C36A35FA29F8CA340075F871 /* LaunchScreenStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenStep.swift; sourceTree = "<group>"; };
+		C39D415C29F9106300764000 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +81,10 @@
 			isa = PBXGroup;
 			children = (
 				C36A35FC29F8CBC90075F871 /* App */,
-				C36A35F229F8C7F20075F871 /* Slot-Machine-Info.plist */,
 				C36A35F029F8C7A90075F871 /* Helpers */,
 				C36A35DF29F8C6180075F871 /* Sounds */,
 				C36A35C929F8C4EE0075F871 /* View */,
+				C36A35F229F8C7F20075F871 /* Slot-Machine-Info.plist */,
 				C36A35C129F8C4CB0075F871 /* Preview Content */,
 			);
 			path = "Slot Machine";
@@ -120,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				C36A35F729F8C9FD0075F871 /* Splash Helper */,
+				C33AC33B29F8D2640046ED15 /* Modifiers.swift */,
+				C39D415C29F9106300764000 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -144,6 +152,7 @@
 		C36A35F629F8C9E50075F871 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
+				C33AC33929F8D2190046ED15 /* LogoView.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -245,10 +254,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C36A35FB29F8CA340075F871 /* LaunchScreenStep.swift in Sources */,
+				C33AC33A29F8D2190046ED15 /* LogoView.swift in Sources */,
 				C36A35F929F8CA190075F871 /* LaunchScreenStateManager.swift in Sources */,
+				C39D415D29F9106300764000 /* Extensions.swift in Sources */,
 				C36A35BE29F8C4CA0075F871 /* ContentView.swift in Sources */,
 				C36A35BC29F8C4CA0075F871 /* Slot_MachineApp.swift in Sources */,
 				C36A35F529F8C9230075F871 /* LaunchScreenView.swift in Sources */,
+				C33AC33C29F8D2640046ED15 /* Modifiers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +398,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -416,6 +429,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
