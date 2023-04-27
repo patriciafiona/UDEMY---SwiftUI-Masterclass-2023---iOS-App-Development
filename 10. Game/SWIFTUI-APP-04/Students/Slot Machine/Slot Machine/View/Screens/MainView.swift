@@ -103,229 +103,271 @@ struct MainView: View {
     // MARK: - BODY
     var body: some View {
         ZStack {
-            // MARK: - BACKGROUND
-            LinearGradient(gradient: Gradient(colors: [Color("ColorPink"), Color("ColorPurple")]), startPoint: .top, endPoint: .bottom).ignoresSafeArea(.all)
+          // MARK: - BACKGROUND
+          LinearGradient(gradient: Gradient(colors: [Color("ColorPink"), Color("ColorPurple")]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
+          
+          // MARK: - INTERFACE
+          VStack(alignment: .center, spacing: 5) {
             
-            // MARK: - INTERFACE
-            VStack(alignment: .center, spacing: 5) {
-                // MARK: - HEADER
-                LogoView()
-                
-                Spacer()
-                
-                // MARK: - SCORE
-                HStack {
-                    HStack {
-                        Text("Your\nCoins".uppercased())
-                            .scoreLableStyle()
-                            .multilineTextAlignment(.trailing)
-                        
-                        Text("\(coins)")
-                            .scoreNumberStyle()
-                            .modifier(ScoreNumberModifier())
-                    }
-                    .modifier(ScoreContainerModifier())
-                    
-                    Spacer()
-                    
-                    HStack {
-                        Text("\(highscore)")
-                            .scoreNumberStyle()
-                            .modifier(ScoreNumberModifier())
-                        
-                        Text("High\nScore".uppercased())
-                            .scoreLableStyle()
-                            .multilineTextAlignment(.leading)
-                    }
-                    .modifier(ScoreContainerModifier())
-                }
-                
-                // MARK: - SLOT MACHINE
-                Spacer()
-                
-                VStack(alignment: .center, spacing: 0) {
-                    // MARK: - REELS #1
-                    ZStack {
-                        ReelView()
-                        Image(symbols[reels[0]])
-                            .resizable()
-                            .modifier(ImageModifier())
-                    }
-                    
-                    HStack(alignment: .center, spacing: 0) {
-                        // MARK: - REELS #2
-                        ZStack {
-                            ReelView()
-                            Image(symbols[reels[1]])
-                                .resizable()
-                                .modifier(ImageModifier())
-                        }
-                        
-                        Spacer()
-                        
-                        // MARK: - REELS #3
-                        ZStack {
-                            ReelView()
-                            Image(symbols[reels[2]])
-                                .resizable()
-                                .modifier(ImageModifier())
-                        }
-                    }
-                    .frame(maxWidth: 500)
-                    
-                    // MARK: - SPIN BUTTON
-                    Button(action: {
-                        self.spinReels()
-                        
-                        self.checkWinning()
-                        
-                        self.isGameOver()
-                    }) {
-                        Image("gfx-spin")
-                            .renderingMode(.original)
-                            .resizable()
-                            .modifier(ImageModifier())
-                    }
-                    
-                }//: Slot Machine
-                .layoutPriority(2)
-                
-                // MARK: - FOOTER
-                Spacer()
-                
-                HStack {
-                    // MARK: - BET 20
-                    HStack(alignment: .center, spacing: 10) {
-                      Button(action: {
-                        self.activateBet20()
-                      }) {
-                        Text("20")
-                          .fontWeight(.heavy)
-                          .foregroundColor(isActiveBet20 ? Color("ColorYellow") : Color.white)
-                          .modifier(BetNumberModifier())
-                      }
-                      .modifier(BetCapsuleModifier())
-                      
-                      Image("gfx-casino-chips")
-                        .resizable()
-                        .offset(x: isActiveBet20 ? 0 : 20)
-                        .opacity(isActiveBet20 ? 1 : 0)
-                        .modifier(CasinoChipsModifier())
-                        .animation(.default, value: isActiveBet20)
-                    }
-                    
-                    Spacer()
-                    
-                    // MARK: - BET 10
-                    HStack(alignment: .center, spacing: 10) {
-                      Image("gfx-casino-chips")
-                        .resizable()
-                        .offset(x: isActiveBet10 ? 0 : -20)
-                        .opacity(isActiveBet10 ? 1 : 0)
-                        .modifier(CasinoChipsModifier())
-                        .animation(.default, value: isActiveBet10)
-                      
-                      Button(action: {
-                        self.activateBet10()
-                      }) {
-                        Text("10")
-                          .fontWeight(.heavy)
-                          .foregroundColor(isActiveBet10 ? Color("ColorYellow") : Color.white)
-                          .modifier(BetNumberModifier())
-                      }
-                      .modifier(BetCapsuleModifier())
-                    }
-                }
-            }//:VSTACK
-            .overlay(
-                // RESET
-                Button(action: {}) {
-                    Image(systemName: "arrow.2.circlepath.circle")
-                }
-                .modifier(ButtonModifier()),
-                alignment: .topLeading
-            )
-            .overlay(
-                // INFO
-                Button(action: {
-                    self.showingInfoView = true
-                }) {
-                    Image(systemName: "info.circle")
-                }
-                .modifier(ButtonModifier()),
-                alignment: .topTrailing
-            )
-            .padding()
-            .frame(maxWidth: 720)
-            .blur(radius: $showingModal.wrappedValue ? 5 : 0, opaque: false)
+            // MARK: - HEADER
+            LogoView()
             
-            // MARK: - POPUP
-            if $showingModal.wrappedValue {
-                ZStack {
-                    Color("ColorTransparentBlack").edgesIgnoringSafeArea(.all)
-                    
-                    //MODAL
-                    VStack(spacing: 0) {
-                        //TITLE
-                        Text("GAME OVER")
-                            .font(.system(.title, design: .rounded))
-                            .fontWeight(.heavy)
-                            .padding()
-                            .frame(minWidth: 0, maxWidth: .infinity)
-                            .background(Color("ColorPink"))
-                            .foregroundColor(.white)
-                        
-                        Spacer()
-                        
-                        //MESSAGE
-                        VStack(alignment: .center, spacing: 16) {
-                            Image("gfx-seven-reel")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(maxHeight: 72)
-                            
-                            Text("Bad luck! You lost all of the coins. \nLet's play again!")
-                                .font(.system(.body, design: .rounded))
-                                .lineLimit(2)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(.gray)
-                                .layoutPriority(1)
-                            
-                            Button(action: {
-                                self.showingModal = false
-                                self.coins = 100
-                            }) {
-                                Text("New Game".uppercased())
-                                    .font(.system(.body, design: .rounded))
-                                    .fontWeight(.semibold)
-                                    .accentColor(Color("ColorPink"))
-                                    .padding(.horizontal, 12)
-                                    .padding(.vertical, 8)
-                                    .frame(minWidth: 128)
-                                    .background(
-                                        Capsule()
-                                            .strokeBorder(lineWidth: 1.75)
-                                            .foregroundColor(Color("ColorPink"))
-                                    )
-                            }
-                        }
-                        
-                        Spacer()
-                    }
-                }
-                .frame(
-                    minWidth: 280, idealWidth: 280, maxWidth: 320,
-                    minHeight: 260, idealHeight: 280, maxHeight: 320,
-                    alignment: .center
-                )
-                .background(.white)
-                .cornerRadius(20)
-                .shadow(color: Color("ColorTransparentBlack"), radius: 6, x: 0, y: 8)
+            Spacer()
+            
+            // MARK: - SCORE
+            HStack {
+              HStack {
+                Text("Your\nCoins".uppercased())
+                  .scoreLabelStyle()
+                  .multilineTextAlignment(.trailing)
+                
+                Text("\(coins)")
+                  .scoreNumberStyle()
+                  .modifier(ScoreNumberModifier())
+              }
+              .modifier(ScoreContainerModifier())
+              
+              Spacer()
+              
+              HStack {
+                Text("\(highscore)")
+                  .scoreNumberStyle()
+                  .modifier(ScoreNumberModifier())
+                
+                Text("High\nScore".uppercased())
+                  .scoreLabelStyle()
+                  .multilineTextAlignment(.leading)
+                
+              }
+              .modifier(ScoreContainerModifier())
             }
             
-        }//: ZSTACK
+            // MARK: - SLOT MACHINE
+            VStack(alignment: .center, spacing: 0) {
+              
+              // MARK: - REEL #1
+              ZStack {
+                ReelView()
+                Image(symbols[reels[0]])
+                  .resizable()
+                  .modifier(ImageModifier())
+                  .opacity(animatingSymbol ? 1 : 0)
+                  .offset(y: animatingSymbol ? 0 : -50)
+                  .animation(.easeOut(duration: Double.random(in: 0.5...0.7)), value: animatingSymbol)
+                  .onAppear(perform: {
+                    self.animatingSymbol.toggle()
+                    playSound(sound: "riseup", type: "mp3")
+                  })
+              }
+              
+              HStack(alignment: .center, spacing: 0) {
+                // MARK: - REEL #2
+                ZStack {
+                  ReelView()
+                  Image(symbols[reels[1]])
+                    .resizable()
+                    .modifier(ImageModifier())
+                    .opacity(animatingSymbol ? 1 : 0)
+                    .offset(y: animatingSymbol ? 0 : -50)
+                    .animation(.easeOut(duration: Double.random(in: 0.7...0.9)), value: animatingSymbol)
+                    .onAppear(perform: {
+                      self.animatingSymbol.toggle()
+                    })
+                }
+                
+                Spacer()
+                
+                // MARK: - REEL #3
+                ZStack {
+                  ReelView()
+                  Image(symbols[reels[2]])
+                    .resizable()
+                    .modifier(ImageModifier())
+                    .opacity(animatingSymbol ? 1 : 0)
+                    .offset(y: animatingSymbol ? 0 : -50)
+                    .animation(.easeOut(duration: Double.random(in: 0.9...1.1)), value: animatingSymbol)
+                    .onAppear(perform: {
+                      self.animatingSymbol.toggle()
+                    })
+                }
+              }
+              .frame(maxWidth: 500)
+              
+              // MARK: - SPIN BUTTON
+              Button(action: {
+                // 1. SET THE DEFAULT STATE: NO ANIMATION
+                withAnimation {
+                  self.animatingSymbol = false
+                }
+                
+                // 2. SPIN THE REELS WITH CHANGING THE SYMBOLS
+                self.spinReels()
+                
+                // 3. TRIGGER THE ANIMATION AFTER CHANGING THE SYMBOLS
+                withAnimation {
+                  self.animatingSymbol = true
+                }
+                
+                // 4. CHECK WINNING
+                self.checkWinning()
+                
+                // 5. GAME IS OVER
+                self.isGameOver()
+              }) {
+                Image("gfx-spin")
+                  .renderingMode(.original)
+                  .resizable()
+                  .modifier(ImageModifier())
+              }
+            } // Slot Machine
+              .layoutPriority(2)
+            
+            // MARK: - FOOTER
+            Spacer()
+            
+            HStack {
+              
+              // MARK: - BET 20
+              HStack(alignment: .center, spacing: 10) {
+                Button(action: {
+                  self.activateBet20()
+                }) {
+                  Text("20")
+                    .fontWeight(.heavy)
+                    .foregroundColor(isActiveBet20 ? Color("ColorYellow") : Color.white)
+                    .modifier(BetNumberModifier())
+                }
+                .modifier(BetCapsuleModifier())
+                
+                Image("gfx-casino-chips")
+                  .resizable()
+                  .offset(x: isActiveBet20 ? 0 : 20)
+                  .opacity(isActiveBet20 ? 1 : 0)
+                  .modifier(CasinoChipsModifier())
+                  .animation(.default, value: isActiveBet20)
+              }
+              
+              Spacer()
+              
+              // MARK: - BET 10
+              HStack(alignment: .center, spacing: 10) {
+                Image("gfx-casino-chips")
+                  .resizable()
+                  .offset(x: isActiveBet10 ? 0 : -20)
+                  .opacity(isActiveBet10 ? 1 : 0)
+                  .modifier(CasinoChipsModifier())
+                  .animation(.default, value: isActiveBet10)
+                
+                Button(action: {
+                  self.activateBet10()
+                }) {
+                  Text("10")
+                    .fontWeight(.heavy)
+                    .foregroundColor(isActiveBet10 ? Color("ColorYellow") : Color.white)
+                    .modifier(BetNumberModifier())
+                }
+                .modifier(BetCapsuleModifier())
+              }
+            }
+          }
+          // MARK: - BUTTONS
+          .overlay(
+            // RESET
+            Button(action: {
+              self.resetGame()
+            }) {
+              Image(systemName: "arrow.2.circlepath.circle")
+                .foregroundColor(.white)
+            }
+            .modifier(ButtonModifier()),
+            alignment: .topLeading
+          )
+          .overlay(
+            // INFO
+            Button(action: {
+              self.showingInfoView = true
+            }) {
+              Image(systemName: "info.circle")
+                .foregroundColor(.white)
+            }
+            .modifier(ButtonModifier()),
+            alignment: .topTrailing
+          )
+          .padding()
+          .frame(maxWidth: 720)
+          .blur(radius: $showingModal.wrappedValue ? 5 : 0, opaque: false)
+          
+          // MARK: - POPUP
+          if $showingModal.wrappedValue {
+            ZStack {
+              Color("ColorTransparentBlack").edgesIgnoringSafeArea(.all)
+              
+              // MODAL
+              VStack(spacing: 0) {
+                // TITLE
+                Text("GAME OVER")
+                  .font(.system(.title, design: .rounded))
+                  .fontWeight(.heavy)
+                  .padding()
+                  .frame(minWidth: 0, maxWidth: .infinity)
+                  .background(Color("ColorPink"))
+                  .foregroundColor(Color.white)
+                
+                Spacer()
+                
+                // MESSAGE
+                VStack(alignment: .center, spacing: 16) {
+                  Image("gfx-seven-reel")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(maxHeight: 72)
+                  
+                  Text("Bad luck! You lost all of the coins. \nLet's play again!")
+                    .font(.system(.body, design: .rounded))
+                    .lineLimit(2)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.gray)
+                    .layoutPriority(1)
+                  
+                  Button(action: {
+                    self.showingModal = false
+                    self.animatingModal = false
+                    self.activateBet10()
+                    self.coins = 100
+                  }) {
+                    Text("New Game".uppercased())
+                      .font(.system(.body, design: .rounded))
+                      .fontWeight(.semibold)
+                      .accentColor(Color("ColorPink"))
+                      .padding(.horizontal, 12)
+                      .padding(.vertical, 8)
+                      .frame(minWidth: 128)
+                      .background(
+                        Capsule()
+                          .strokeBorder(lineWidth: 1.75)
+                          .foregroundColor(Color("ColorPink"))
+                      )
+                  }
+                }
+                
+                Spacer()
+              }
+              .frame(minWidth: 280, idealWidth: 280, maxWidth: 320, minHeight: 260, idealHeight: 280, maxHeight: 320, alignment: .center)
+              .background(Color.white)
+              .cornerRadius(20)
+              .shadow(color: Color("ColorTransparentBlack"), radius: 6, x: 0, y: 8)
+              .opacity($animatingModal.wrappedValue ? 1 : 0)
+              .offset(y: $animatingModal.wrappedValue ? 0 : -100)
+              .animation(Animation.spring(response: 0.6, dampingFraction: 1.0, blendDuration: 1.0), value: showingModal)
+              .onAppear(perform: {
+                self.animatingModal = true
+              })
+            }
+          }
+          
+        } // ZStack
         .sheet(isPresented: $showingInfoView) {
-            InfoView()
+          InfoView()
         }
         .task {
             try? await Task.sleep(for: Duration.seconds(1.5))
