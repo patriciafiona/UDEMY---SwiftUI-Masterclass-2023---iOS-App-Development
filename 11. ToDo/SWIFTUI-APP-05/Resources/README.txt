@@ -1,0 +1,1 @@
+You can find the resource files in this folder.
