@@ -79,8 +79,8 @@ Data source           : [UDEMY](https://www.udemy.com/course/swiftui-masterclass
 ## Ratings & Total Hour
 |Rating | Hours |
 | :-: | :-: |
-|4.3 :star: | :alarm_clock: 31 hours |
-|4,823 ratings| Total |
+|4.4 :star: | :alarm_clock: 33 hours |
+|5,325 ratings| Total |
 
 ## :computer: Requirements
 - Xcode 14 from Apple (free)
