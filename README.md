@@ -31,9 +31,9 @@ Data source           : [UDEMY](https://www.udemy.com/course/swiftui-masterclass
 | Section 08 | Developers      | This course is designed for you to master SwiftUI and iOS 13 app development. We'll build app that show the list of developers. | <img src="https://user-images.githubusercontent.com/32255348/230040367-f4b14996-a4ac-4f26-b452-567e9d6419dc.jpg" width="1000"/> | [Link](https://github.com/patriciafiona/UDEMY---SwiftUI-Masterclass-2023---iOS-App-Development/tree/S08-Developers) |
 | Section 09 | Avocado      | Do you want to learn how to create an eye-catchy layout in SwiftUI? In the second project, you will learn all about views in SwiftUI! We are going to build an Avocado Recipe iOS 13 app for iPhone and iPad. | <img src="https://user-images.githubusercontent.com/32255348/230040651-9b07a043-5239-42cc-9fe8-616fa8a05713.png" width="1000"/> | [Link](https://github.com/patriciafiona/UDEMY---SwiftUI-Masterclass-2023---iOS-App-Development/tree/S09-Avocado_Recipes) |
 | Section 10 | SwiftUI Game      | Let's build the game using SwiftUI | <img src="https://user-images.githubusercontent.com/32255348/230041105-3045f5f8-e7bb-4366-b01a-1a9eea159d23.jpeg" width="1000"/> | [Link](https://github.com/patriciafiona/UDEMY---SwiftUI-Masterclass-2023---iOS-App-Development/tree/S10-Game) |
-| Section 11 | ToDos    | Let’s build together another outstanding iOS and iPadOS app with SwiftUI! The new project will be a TODO application with Core Data. | <img src="https://user-images.githubusercontent.com/32255348/230041423-79336dca-efb4-4b26-87cd-4ee77a07ff9b.png" width="1000"/> | [COMMING SOON] |
+| Section 11 | ToDos    | Let’s build together another outstanding iOS and iPadOS app with SwiftUI! The new project will be a TODO application with Core Data. | <img src="https://user-images.githubusercontent.com/32255348/230041423-79336dca-efb4-4b26-87cd-4ee77a07ff9b.png" width="1000"/> | [Link](https://github.com/patriciafiona/UDEMY---SwiftUI-Masterclass-2023---iOS-App-Development/tree/S11-ToDo) |
 | Section 12 | Honeymoon    | How hard is it to create an iOS app with Tinder-like gestures? You will pick up some handy SwiftUI best-practices with this hands-on tutorial. | <img src="https://user-images.githubusercontent.com/32255348/230041820-8cb8e9ce-4e16-48c8-8a4b-aaf5a824b5aa.jpg" width="1000"/> | [COMMING SOON] |
-
+| Section 13 | Hike    | Discover how to incorporate alternate app icons into your SwiftUI app, allowing users to select their preferred icon. This feature empowers users to personalize their home screen with a selection of app icons which gives it a distinct style. | <img src="https://github.com/patriciafiona/UDEMY---SwiftUI-Masterclass-2023---iOS-App-Development/assets/32255348/6157fcee-9d91-4ceb-816a-571e91dab5b3" width="1000"/> | [COMMING SOON] |
 
 ## :dart: What you'll learn
 :heavy_check_mark: Develop iOS iPhone and iPad apps with gorgeous layout and design
@@ -93,4 +93,4 @@ Data source           : [UDEMY](https://www.udemy.com/course/swiftui-masterclass
 Thank you so much already visiting my repository! If you want to support my open repository, please star this repository. 
 
 [![Platform](https://img.shields.io/badge/XCode-14.3%20beta%203-blue)](https://developer.apple.com/xcode/)
-[![Platform](https://img.shields.io/badge/Last%20updated-April%202023-orange)](https://www.udemy.com/course/swiftui-masterclass-course-ios-development-with-swift/)
+[![Platform](https://img.shields.io/badge/Last%20updated-July%202023-orange)](https://www.udemy.com/course/swiftui-masterclass-course-ios-development-with-swift/)
