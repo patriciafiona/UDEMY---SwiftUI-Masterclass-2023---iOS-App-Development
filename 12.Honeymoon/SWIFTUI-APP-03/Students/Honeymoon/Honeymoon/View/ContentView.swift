@@ -14,10 +14,16 @@ struct ContentView: View {
         // MARK: - BODY
         var body: some View {
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("Hello, world!")
+                HeaderView()
+                
+                Spacer()
+                
+                CardView(honeymoon: honeymoonData[2])
+                    .padding()
+                
+                Spacer()
+                
+                FooterView()
             }
             .padding()
             .task {
