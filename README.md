@@ -52,7 +52,7 @@ With over 5000+ icons, SF Symbols is a library of iconography designed to integr
 App Icon makes the first impression on the users' mobile devices. We could not take shortcuts without it if we wanted to upload our application to Apple's App Store.
 
 ## Video
-[COMING SOON]
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/NIJLFZk9SdA/0.jpg)](https://www.youtube.com/watch?v=NIJLFZk9SdA&ab_channel=CredoAcademy)
 
 ## Requirements
 - Xcode 14 from Apple (free)
@@ -75,4 +75,4 @@ App Icon makes the first impression on the users' mobile devices. We could not t
 Thank you so much already visiting my repository! If you want to support my open repository, please star this repository. 
 
 [![Platform](https://img.shields.io/badge/XCode-14.3%20beta%203-blue)](https://developer.apple.com/xcode/)
-[![Platform](https://img.shields.io/badge/Last%20updated-April%202023-orange)](https://www.udemy.com/course/swiftui-masterclass-course-ios-development-with-swift/)
+[![Platform](https://img.shields.io/badge/Last%20updated-July%202023-orange)](https://www.udemy.com/course/swiftui-masterclass-course-ios-development-with-swift/)
