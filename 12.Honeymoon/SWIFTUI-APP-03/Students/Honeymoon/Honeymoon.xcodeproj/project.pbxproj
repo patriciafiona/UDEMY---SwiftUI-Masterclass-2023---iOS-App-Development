@@ -23,6 +23,10 @@
 		C3D400A62A690EA000B5BDC5 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D400A52A690EA000B5BDC5 /* FooterView.swift */; };
 		C3D400A92A69109E00B5BDC5 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D400A82A69109E00B5BDC5 /* HeaderComponent.swift */; };
 		C3D400AB2A69119300B5BDC5 /* GuideComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D400AA2A69119300B5BDC5 /* GuideComponent.swift */; };
+		C3D400AE2A6913E000B5BDC5 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D400AD2A6913E000B5BDC5 /* GuideView.swift */; };
+		C3D400B32A69163E00B5BDC5 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D400B02A69163E00B5BDC5 /* TitleModifier.swift */; };
+		C3D400B42A69163E00B5BDC5 /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D400B12A69163E00B5BDC5 /* SymbolModifier.swift */; };
+		C3D400B52A69163E00B5BDC5 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D400B22A69163E00B5BDC5 /* ButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,10 @@
 		C3D400A52A690EA000B5BDC5 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		C3D400A82A69109E00B5BDC5 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
 		C3D400AA2A69119300B5BDC5 /* GuideComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideComponent.swift; sourceTree = "<group>"; };
+		C3D400AD2A6913E000B5BDC5 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		C3D400B02A69163E00B5BDC5 /* TitleModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleModifier.swift; path = "../../../../Completed/Honeymoon iOS 16/Honeymoon/Modifier/TitleModifier.swift"; sourceTree = "<group>"; };
+		C3D400B12A69163E00B5BDC5 /* SymbolModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SymbolModifier.swift; path = "../../../../Completed/Honeymoon iOS 16/Honeymoon/Modifier/SymbolModifier.swift"; sourceTree = "<group>"; };
+		C3D400B22A69163E00B5BDC5 /* ButtonModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonModifier.swift; path = "../../../../Completed/Honeymoon iOS 16/Honeymoon/Modifier/ButtonModifier.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,7 @@
 		C3D4007C2A68EC1500B5BDC5 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				C3D400AF2A69162200B5BDC5 /* Modifier */,
 				C3D400A72A69108800B5BDC5 /* Components */,
 				C3D400992A68F20400B5BDC5 /* Data */,
 				C3D400922A68EE5900B5BDC5 /* Helper */,
@@ -106,6 +115,7 @@
 		C3D4008C2A68EC5A00B5BDC5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C3D400AC2A6913D400B5BDC5 /* Guide View */,
 				C3D400A02A68F31B00B5BDC5 /* Card View */,
 				C3D4009F2A68F2FE00B5BDC5 /* Splash View */,
 				C3D4007F2A68EC1500B5BDC5 /* ContentView.swift */,
@@ -173,6 +183,24 @@
 				C3D400AA2A69119300B5BDC5 /* GuideComponent.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		C3D400AC2A6913D400B5BDC5 /* Guide View */ = {
+			isa = PBXGroup;
+			children = (
+				C3D400AD2A6913E000B5BDC5 /* GuideView.swift */,
+			);
+			path = "Guide View";
+			sourceTree = "<group>";
+		};
+		C3D400AF2A69162200B5BDC5 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				C3D400B22A69163E00B5BDC5 /* ButtonModifier.swift */,
+				C3D400B12A69163E00B5BDC5 /* SymbolModifier.swift */,
+				C3D400B02A69163E00B5BDC5 /* TitleModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,11 +280,15 @@
 				C3D400982A68EEC700B5BDC5 /* LaunchScreenView.swift in Sources */,
 				C3D400A62A690EA000B5BDC5 /* FooterView.swift in Sources */,
 				C3D400A92A69109E00B5BDC5 /* HeaderComponent.swift in Sources */,
+				C3D400AE2A6913E000B5BDC5 /* GuideView.swift in Sources */,
 				C3D400962A68EE9300B5BDC5 /* LaunchScreenStateManager.swift in Sources */,
+				C3D400B32A69163E00B5BDC5 /* TitleModifier.swift in Sources */,
 				C3D400802A68EC1500B5BDC5 /* ContentView.swift in Sources */,
 				C3D400942A68EE6700B5BDC5 /* LaunchScreenStep.swift in Sources */,
+				C3D400B52A69163E00B5BDC5 /* ButtonModifier.swift in Sources */,
 				C3D400AB2A69119300B5BDC5 /* GuideComponent.swift in Sources */,
 				C3D4007E2A68EC1500B5BDC5 /* HoneymoonApp.swift in Sources */,
+				C3D400B42A69163E00B5BDC5 /* SymbolModifier.swift in Sources */,
 				C3D400A22A68F33100B5BDC5 /* CardView.swift in Sources */,
 				C3D4009E2A68F28400B5BDC5 /* HoneymoonData.swift in Sources */,
 			);

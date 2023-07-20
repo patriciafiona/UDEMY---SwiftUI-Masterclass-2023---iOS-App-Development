@@ -1,7 +1,8 @@
 //
-//  Created by Robert Petras
-//  Credo Academy ♥ Design and Code
-//  https://credo.academy
+//  ButtonModifier.swift
+//  Honeymoon
+//
+//  Created by Administrator on 20/07/23.
 //
 
 import SwiftUI
