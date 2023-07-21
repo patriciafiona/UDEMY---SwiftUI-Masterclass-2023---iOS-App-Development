@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C31C6D0F2A6A236100319344 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31C6D0E2A6A236100319344 /* InfoView.swift */; };
 		C3D4007E2A68EC1500B5BDC5 /* HoneymoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4007D2A68EC1500B5BDC5 /* HoneymoonApp.swift */; };
 		C3D400802A68EC1500B5BDC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4007F2A68EC1500B5BDC5 /* ContentView.swift */; };
 		C3D400822A68EC1600B5BDC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D400812A68EC1600B5BDC5 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C31C6D0E2A6A236100319344 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		C3D4007A2A68EC1500B5BDC5 /* Honeymoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honeymoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D4007D2A68EC1500B5BDC5 /* HoneymoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonApp.swift; sourceTree = "<group>"; };
 		C3D4007F2A68EC1500B5BDC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C31C6D0B2A6A233E00319344 /* Info View */ = {
+			isa = PBXGroup;
+			children = (
+				C31C6D0E2A6A236100319344 /* InfoView.swift */,
+			);
+			path = "Info View";
+			sourceTree = "<group>";
+		};
 		C3D400712A68EC1500B5BDC5 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 		C3D4008C2A68EC5A00B5BDC5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C31C6D0B2A6A233E00319344 /* Info View */,
 				C3D400AC2A6913D400B5BDC5 /* Guide View */,
 				C3D400A02A68F31B00B5BDC5 /* Card View */,
 				C3D4009F2A68F2FE00B5BDC5 /* Splash View */,
@@ -279,6 +290,7 @@
 				C3D400A42A690AE500B5BDC5 /* HeaderView.swift in Sources */,
 				C3D400982A68EEC700B5BDC5 /* LaunchScreenView.swift in Sources */,
 				C3D400A62A690EA000B5BDC5 /* FooterView.swift in Sources */,
+				C31C6D0F2A6A236100319344 /* InfoView.swift in Sources */,
 				C3D400A92A69109E00B5BDC5 /* HeaderComponent.swift in Sources */,
 				C3D400AE2A6913E000B5BDC5 /* GuideView.swift in Sources */,
 				C3D400962A68EE9300B5BDC5 /* LaunchScreenStateManager.swift in Sources */,
