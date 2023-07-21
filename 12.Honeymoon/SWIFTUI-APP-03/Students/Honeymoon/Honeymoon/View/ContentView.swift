@@ -12,11 +12,12 @@ struct ContentView: View {
     @EnvironmentObject private var launchScreenState: LaunchScreenStateManager
     @State var showAlert: Bool = false
     @State var showGuide: Bool = false
+    @State var showInfo: Bool = false
         
     // MARK: - BODY
     var body: some View {
         VStack {
-            HeaderView(showGuideView: $showGuide)
+            HeaderView(showGuideView: $showGuide, showInfoView: $showInfo)
             
             Spacer()
             

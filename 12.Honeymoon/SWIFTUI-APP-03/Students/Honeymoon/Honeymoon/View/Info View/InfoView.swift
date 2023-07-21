@@ -9,6 +9,7 @@ import SwiftUI
 
 struct InfoView: View {
     // MARK: - Properties
+    @Environment(\.presentationMode) var presentationMode
     
     // MARK: - Body
     var body: some View {
@@ -29,7 +30,7 @@ struct InfoView: View {
                 CreditView()
                 
                 Button(action: {
-                    
+                    self.presentationMode.wrappedValue.dismiss()
                 }){
                     Text("Continue".uppercased())
                         .modifier(ButtonModifier())
